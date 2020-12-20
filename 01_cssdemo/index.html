@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- training: https://www.udemy.com/course/the-complete-web-development-bootcamp/l -->
+
+    <head>
+        <title>Training Page</title>
+        <meta charset="utf-8">
+        <meta name="description" content="description">
+        <meta name="author" content="adriangbarnett@gmail.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="favicon.ico">
+        <script src="js/index.js"></script>
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body onLoad="main();" >
+        
+      <!-- Static top banner -->
+        <div class="divBanner" hidden>
+                <p> banner</p>
+        </div>
+
+        <!-- TOP SECTION -->
+        <div class="divTop">
+            <img src="images/cloud.png" alt="top cloud" class="topCloud"></image> 
+            <h1>This is a simple web page demo</h1>
+            <h2>this is some <span class="underline normal">underline and normal</span> at 2.5rem (40px) text</h2>
+            <img src="images/cloud.png" alt="top cloud" class="bottomCloud"></image>
+            <img src="images/mountain.png" alt="bottom mountain" class="mountain"></image>
+        </div>
+
+        <!-- -------------------- STUB --------------------------- -->
+        <div class="middle-container">
+          <div class="profile">
+            <img class="profileImage" src="images/profile.png" alt="i1">
+            <h2>Hello: this is heading two</h2>
+            <p class="myCenterText">Aenean consectetur dictum venenatis. Vestibulum eu mattis dolor, non ultrices neque. Curabitur dui nulla, ullamcorper eget fringilla quis, pulvinar vel tellus. Quisque fringilla lectus quis est dictum, a congue lectus imperdiet. Praesent enim tellus, molestie vel enim eu, posuere condimentum erat. Praesent tempor ex sem, quis eleifend augue malesuada at. Quisque rutrum justo lorem, sit amet ultrices erat fringilla eget. Nunc tempus, erat sed hendrerit tempus, enim nisl dignissim sem, id commodo purus ipsum sed neque. Vestibulum id semper nisi. Donec et sapien vitae felis gravida ornare. In ac nunc eget nunc placerat dignissim a ac odio.</p>
+          </div>
+
+          <hr>
+
+          <div class="skills">
+
+            <h2>My Skills: this is heading two.</h2>
+            <div class="skill-row">
+              <img class="soupImage" src="images/soup.png" alt="i2">
+              <h3>1. This is heading three one</h3>
+              <p>This is some text about cooking. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget ante eu ex egestas porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam finibus, ipsum vel ultricies lacinia, lorem urna mollis turpis, quis hendrerit nibh mi vel ligula. Suspendisse nec laoreet turpis, vel mollis libero. Nunc vel finibus mauris, vel dapibus libero. Cras dignissim egestas ullamcorper. Suspendisse nisi nisi, elementum eu iaculis eu, vestibulum eget ex.</p>
+            </div>
+
+            <div class="skill-row">
+              <img class="automationImage" src="images/automation.png" alt="i3">
+              <h3>2. This is heading three two</h3>
+              <p>This is some text about auotmation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget ante eu ex egestas porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam finibus, ipsum vel ultricies lacinia, lorem urna mollis turpis, quis hendrerit nibh mi vel ligula. Suspendisse nec laoreet turpis, vel mollis libero. Nunc vel finibus mauris, vel dapibus libero. Cras dignissim egestas ullamcorper. Suspendisse nisi nisi, elementum eu iaculis eu, vestibulum eget ex.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="contact-me">
+            <h2>This is some heading two text</h2>
+            <h3>This is heading three lorem ipsum dolor sit amet, non elit.</h3>
+            <p class="myCenterText">Donec elementum gravida lectus quis eleifend. Fusce a magna at felis cursus pellentesque ut ac tellus. Vivamus purus augue, convallis blandit ex et, tincidunt ultrices arcu. Phasellus quis sollicitudin nulla, at malesuada elit. Curabitur ullamcorper ornare neque sed imperdiet. Ut dapibus neque enim, at efficitur tortor maximus tempor.</p>
+            <!-- <a class="btnContactMe" href="mailto:name@email.com" action="alert(1);">CONTACT ME</a> -->
+            <a id="btnContactMe" class="btnContactMe">CLICK ME BUTTON</a>
+          </div>
+
+
+        </div>
+        
+        
+        <div class="bottom-container">
+          <a class="footer-link" href="index.html">LinkedIn</a>
+          <a class="footer-link" href="index.html">Twitter</a>
+          <a class="footer-link" href="index.html">Website</a>
+
+          
+    
+          <p class="copyright">© 2020 Adrian Barnett</p>
+
+          <!-- credits -->
+          <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+
+        </div>
+        
+
+        <!-- hidden -->
+        <p class="none"> this is text: none</p>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+
+      
+			<!-- Modal content -->
+			<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Some text in the Modal!</p>
+				</div>
+
+      </div>
+      
+
+      <!-- MODAL -->
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("btnContactMe");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+
+
+      </body>
+
+<html>

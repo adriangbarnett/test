@@ -1,0 +1,12 @@
+/* demo */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+p {
+	color: blue;
+}
+
+p:hover {
+	font-weight: bold;
+}

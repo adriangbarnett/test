@@ -1,0 +1,469 @@
+
+/* ------------------- XXXXXXX --------------------- */
+/* ------------------- XXXXXXX --------------------- */
+/* ------------------- XXXXXXX --------------------- */
+/* ------------------- XXXXXXX --------------------- */
+/* ------------------- XXXXXXX --------------------- */
+
+
+/* ------------------- Final CSS challenge --------------------- */
+
+/* dot */
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #EAF6F6;
+    border-width: 15px;
+    width: 10%;
+}
+
+.myCenterText {
+    width: 50%;
+    margin: 10px auto 25px auto;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.bottom-container {
+    background-color: #66BFBF;
+    height: 125px;
+    padding: 50px;
+
+}
+
+.copyright {
+    color: #EAF6F6;
+    margin: 25px auto 25px auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.footer-link {
+    margin: auto 50px auto 50px;
+    color: #11999E;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none; /* remove under line */
+}
+
+/* make link look like a button */
+.btnContactMe {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EAF6F6;
+    background-color: #11999E;
+    border-radius: 15px; /* rounded corder */
+}
+
+.btnContactMe:hover {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto 50px auto;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EAF6F6;
+    background-color: #4ca4a7;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.blackbtn {
+    background-color: #333; /* adds a background colour to the button */
+    color: #fff; /* changes the text colour */
+    cursor: pointer; /* changes the mouse on hover */
+    padding: 10px 30px; /* adds 10px of space to top and bottom of text and 30px of space on either side */ 
+    }
+
+/* ------------------- FLOAT: used for wrapping text --------------------- */
+.profileImage {
+    width: 15%;
+    height: 15%;
+ }
+
+ .soupImage {
+    width: 25%;
+    height: 25%; 
+    float: left; /* text wrap around image */
+    margin-right: 30px; /* padding: 30px; */
+ }
+
+ .automationImage {
+    width: 25%;
+    height: 25%; 
+    float: right; /* text wrap around image */
+    margin-left: 30px; /* padding: 30px; */
+ }
+
+
+.skill-row {
+    /* top > right > bottom > left: CLOCKWISE */
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: justify;
+}
+
+/* anti float, and NOT wrap */
+.cooking-skill-description {
+    clear: left;
+}
+
+.automation-description {
+    clear: right;
+}
+
+
+/* ------------------- FONT PROPERTY TRAINING --------------------- */
+
+/* static, ignore browser size */
+.font90px {
+    font-size: 50px;
+}
+
+/* use EM for accessibility */
+/* dynamic based on browser size */
+.font90pxDynamic {
+    font-size: 150%; /* 100% = 16ptx */
+}
+
+/* dynamic but uses em, it means the width is as captital metter M*/
+
+.font90pxDynamicREM {
+
+    /* EM addeed on top of inherrtited font sizes, dont use it */
+    /* 1em = 16px (100%) | 5.265em = 90%  */
+    font-size: 2em; 
+    
+    /* if we use "rem" (root em) we ignore parent sizes */
+    font-size: 2rem;
+}
+
+/* how to set a REM to 40px    
+    40px / 16px = 2.5rem
+    <target px size> DIVIDE BY <16px> EQUALS <target REM size>
+*/
+.rem40px {
+    font-size:2.5rem;
+}
+
+
+
+
+
+
+/* ------------------- ABOSLUTE POSITION --------------------- */
+
+
+.fixedTop {
+    position: fixed;
+    height: 100px;
+    background-color: rgb(97, 97, 97);
+}
+
+.container1 {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+}
+
+.redBoxDemo1Absolute {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+
+}
+.yellowBoxDemo1Absolute {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+}
+.greenBoxDemo1Absolute {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+
+/* ------------------- BOX DEMO: red > yellow > green: relative --------------------- */
+.redBoxDemo1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    top: 50;
+    /*display: inline-block;*/
+}
+.yellowBoxDemo1 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    /*display: inline-block;*/
+}
+.greenBoxDemo1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    bottom: 200px;
+    left: 200px;
+    /*display: inline-block;*/
+}
+
+
+
+/* ------------------- TRAINING PAGE --------------------- */
+
+.divBanner {
+    
+    background-color: rgb(185, 185, 185);
+    height: 25px;
+    margin: 0;
+    border: solid 1px;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.divTop {
+    background-color: rgb(217, 241, 251);
+    height: 700px;
+    margin: 0;
+    border: none;
+    padding: 20px;
+    padding-top: 100px;
+}
+.divMiddle {
+    background-color: rgb(238, 255, 0);
+    height: 200px;
+    margin: 0;
+    border: solid 20px;
+    padding: 20px;
+}
+.divBottom{
+    background-color: rgb(34, 255, 0);
+    height: 200px;
+    border: solid 10px;
+    margin: 0;
+    padding: 20px;
+}
+
+.topCloud {
+    position: absolute;
+    left: 1100px;
+    top: 80px;
+}
+
+.bottomCloud {
+    position: absolute;
+    left: 300px;
+    top: 450px;
+}
+
+.middle-container {
+
+    margin-top: 50px;
+}
+
+
+
+/* ---------------------------------  */
+.divBox {
+    background-color: rgb(251, 191, 191);
+    height: 200px;
+    width: 500px;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 50px;
+    margin: 25px;
+}
+
+/* RELATIVE CLOUDS */
+.cloud1 {
+    position: relative;
+    left:300px;
+    top: 100px;
+}
+.cloud2 {
+    position: relative;
+    left: 800px;
+    bottom: 100px;
+}
+
+
+.newRelative {
+    position: relative;
+    left:100px;
+    bottom: 100px;
+}
+
+
+.xButton {
+    position: relative;
+    right: 10px;
+
+
+}
+
+/* -------------------- CUSTOM -------------------------- */
+
+.underline {
+    text-decoration: underline;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+/* remove entire block */
+.none {
+    display: none;
+}
+/* hide entire block */
+.visibilityNone {
+    visibility: hidden;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.normal {
+    font-style: normal
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.centerText {
+    text-align: center;
+}
+
+/* ------------------------- DEFAULT OVERIDES ----------------------------- */
+h1 {
+    /*width: 50%;*/
+    color: #66BFBF;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto; /* top, left/right, bottom, left/right */
+    
+    /* change line height from 2 to 4 */
+    
+    font-family: 'Bad Script', cursive;;
+}
+
+h2 {
+    color: #66BFBF;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #11999E;
+}
+
+p {
+    margin: 0;
+    line-height: 2; /* pref method, dont specify a unit */
+}
+
+
+
+
+body {
+    margin: 0;
+    text-align: center;
+    /* font-family: "Calibri", sans-serif;  */
+    
+    /* embedded */
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display: block;
+    width: 500px;
+    height: 200px;
+    background-color: #11999E;
+    margin: 50px auto 50px auto;
+
+
+    /* 
+    text-align: center;
+    padding-top: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EAF6F6;
+     */
+
+    border-radius: 15px;
+
+  }
+  
+  /* The Close Button */
+  .close {
+    position: relative;
+    right: 0;
+    top: 0;
+    user-select: none;
+  }
+
+  a:hover {
+      color: #000;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
