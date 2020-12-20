@@ -1,2 +1,2 @@
 # test
-Dev testing
+Dev testing, training, demo
