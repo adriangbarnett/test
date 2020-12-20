@@ -2,8 +2,19 @@
 
 Training, demo and experimental code dump
 
-Credits to:
+Demo: https://adriangbarnett.github.io/test/
+
+
+Acknowledgements:
 
 Web dev training: https://www.udemy.com/course/the-complete-web-development-bootcamp/
 
-Icons www.flaticon.com
+Icons:
+
+www.flaticon.com
+
+https://www.favicon.cc/
+
+Bootstrap: 
+
+https://getbootstrap.com/
