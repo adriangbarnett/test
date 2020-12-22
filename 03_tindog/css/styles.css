@@ -86,7 +86,7 @@ body {
     color: #8f8f8f;
 }
 
-/* get icon images drom: https://tinidog.netlify.app/ */
+/* get icon images from: https://tinidog.netlify.app/ */
 .feature-icon  {
     color: #ef8172;
     margin-bottom: 25px;
@@ -96,10 +96,47 @@ body {
     color: #ff4c68;
 }
 
+/* Section 7: Intermediate Bootstrap
+80. The Bootstrap Carousel Part 1 */
+/* CAROSEL */
 
-/* DEV */
-/* html {
-    border-width: 10px;
-    border-style:double;
-    border-color: black;
-} */
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172; 
+    color: white;
+    height: 400px;
+}
+
+.testimonial-text {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 3rem;
+    line-break: 3%;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%; 
+}
+
+#press {
+    background-color: #ef8172;/* round border */
+    text-align: center;
+    padding: 2%;
+}
+
+.press-image {
+    width: 15%;
+    margin: 20px 20px 50px 0; /* space between logo  and other section */
+}
+
+/* carosel: https://getbootstrap.com/docs/4.0/components/carousel/*/
+
+/* add padding so nav butotns are outside */
+.carousel-item {
+    height: 600px;
+    padding: 5% 20%;
+}
+
