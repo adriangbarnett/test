@@ -1,14 +1,14 @@
 /* title section */
 #title {
-  background-color: #ff4c68;  
+  background-color: #ff4c68;
   color: #fff;
 }
 
-h1 {  
+h1 {
     font-family: "Montserrat";
     font-weight: 900; /* Black */
-    font-size: 3.5rem;  
-    line-height: 1.5;  
+    font-size: 3.5rem;
+    line-height: 1.5;
     font-weight: 900;
 }
 
@@ -104,12 +104,19 @@ body {
 
 #testimonials {
     text-align: center;
-    background-color: #ef8172; 
+    background-color: #ef8172;
     color: white;
     height: 400px;
 }
 
 .testimonial-text {
+    /* font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 3rem;
+    line-break: 3%; */
+}
+
+h2 {
     font-family: 'Montserrat';
     font-weight: 800;
     font-size: 3rem;
@@ -118,7 +125,7 @@ body {
 
 .testimonial-image {
     width: 10%;
-    border-radius: 100%; 
+    border-radius: 100%;
 }
 
 #press {
@@ -140,3 +147,33 @@ body {
     padding: 5% 20%;
 }
 
+
+/* cards */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.card-height {
+    height: 400px;
+    /* width: 200px; */
+}
+
+.signup-btn {
+    width: 100%;
+}
+.signup-btn:hover {
+
+}
+ .columnPadding{
+     padding: 3% 2%;
+ }
+
+ h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    /* font-size: 1.5rem; */
+ }
+
+ /* 83 z index */
