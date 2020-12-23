@@ -15,7 +15,7 @@ h1 {
 
 /* overwride bootstrap */
 .container-fluid  {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 /* gap between container and top bar */
@@ -47,7 +47,9 @@ body {
 
  /* download buttons */
  .downloadButtonMargin {
-    margin: 5% 3% 5% 0;
+    margin: 5% 3% 7% 0;
+    text-align: center;
+
  }
 
 
@@ -63,11 +65,18 @@ body {
 .title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute; /* title-image send to back */
+    right: 30%;
 }
 
+
 /* Code Challgence */
+ /* 83 send iphone image to back z-index*/
 #features {
     padding: 5%;
+    background-color:#fff;
+    position: relative;
+    z-index: 1; /* title-image: send to back */
 }
 
 .feature-row {
@@ -82,9 +91,7 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.feature-row-p {
-    color: #8f8f8f;
-}
+
 
 /* get icon images from: https://tinidog.netlify.app/ */
 .feature-icon  {
@@ -156,7 +163,7 @@ h2 {
 }
 
 .card-height {
-    height: 400px;
+    height: 500px;
     /* width: 200px; */
 }
 
@@ -176,4 +183,86 @@ h2 {
     /* font-size: 1.5rem; */
  }
 
- /* 83 z index */
+ #cta  {
+    background-color: #ff4c68;
+    color: #fff;
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+ }
+
+ h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+ }
+
+
+ .fab {
+    margin: 15px;
+ }
+
+ button {
+     width: 200px;
+     text-align: center;
+     margin: 25px 25px 25px 0;
+ }
+
+
+
+
+ #footer {
+    background-color: #fff;
+    height: 200px;
+    text-align: center;
+    padding: 50px 0 100px 0;
+  }
+
+p {
+    color: #8f8f8f;
+}
+
+/* MEDIA RESPONSEIVENESS */
+/* min AND max */
+/* @media (min-width: 400px) and (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+        color: blue;
+    }
+    
+} */
+
+
+/* change image when window becomes smaller */
+/* straight, not tilted, text to be center */
+/* mobile 360, pad: 768 */
+/* @media (min-width: 400px) and (max-width: 350px) { */
+@media (max-width: 768px) {
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    #cta {
+       /* height: 550px;  */
+     height: 370px;
+     padding: 50px;
+    }
+
+}
